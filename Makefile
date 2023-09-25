@@ -293,7 +293,7 @@ else
 PLATFORM_LIBGCC := -L $(shell dirname `$(CC) $(CFLAGS) -print-libgcc-file-name`) -lgcc
 endif
 PLATFORM_LIBS += $(PLATFORM_LIBGCC)
-export PLATFORM_LIBS
+#export PLATFORM_LIBS
 
 # Special flags for CPP when processing the linker script.
 # Pass the version down so we can handle backwards compatibility
